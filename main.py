@@ -9,11 +9,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://your-vercel-url.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 AGENT_MAP = {
     "MarketMaker": MarketMaker,
     "NoiseTrader": NoiseTrader,
