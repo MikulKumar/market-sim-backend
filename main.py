@@ -9,7 +9,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://your-vercel-url.vercel.app"],
+    allow_origins=["https://market-sim-frontend-production.up.railway.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
